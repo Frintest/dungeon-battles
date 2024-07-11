@@ -1,4 +1,8 @@
 import { Game } from "./Game.jsx";
 import { connect } from "react-redux";
 
-export default connect(null, null)(Game);
+const mapStateToProps = (state) => ({
+	heroes: state.TeamReducer.heroes,
+});
+
+export default connect(mapStateToProps, null)(Game);

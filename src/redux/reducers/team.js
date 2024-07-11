@@ -9,40 +9,26 @@ const initialState = {
 			"Название": {
 				name: "Название",
 				avatarSrc: "offer.jpg",
-				weapon: "Кувалда",
+				weapon: "Кагорушка",
 				lifeCount: 2,
 				damageCount: 2,
 			},
-			"вапав": {
-				name: "вапав",
+			"Названией": {
+				name: "Названией",
 				avatarSrc: "offer.jpg",
 				weapon: "Кувалда",
 				lifeCount: 2,
 				damageCount: 2,
 			},
-			"вапвап": {
-				name: "вапвап",
+			"Названиеп": {
+				name: "Названиеп",
 				avatarSrc: "offer.jpg",
 				weapon: "Кувалда",
 				lifeCount: 2,
 				damageCount: 2,
 			},
-			"Назван1ие": {
-				name: "Названи1е",
-				avatarSrc: "offer.jpg",
-				weapon: "Кувалда",
-				lifeCount: 2,
-				damageCount: 2,
-			},
-			"вапа1в": {
-				name: "вапав1",
-				avatarSrc: "offer.jpg",
-				weapon: "Кувалда",
-				lifeCount: 2,
-				damageCount: 2,
-			},
-			"вапва1п": {
-				name: "вапва1п",
+			"Названиеп": {
+				name: "Названиеп",
 				avatarSrc: "offer.jpg",
 				weapon: "Кувалда",
 				lifeCount: 2,
