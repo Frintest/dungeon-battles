@@ -1,8 +1,8 @@
 import { applyMiddleware, combineReducers, legacy_createStore as createStore } from "redux";
 import thunk from "redux-thunk";
-import { a } from "./reducers/a.js";
+import { TeamReducer } from "./reducers/team.js";
 
-let reducers = combineReducers({ a });
+let reducers = combineReducers({ TeamReducer });
 let store = createStore(reducers, applyMiddleware(thunk));
 
 export default store;

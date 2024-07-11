@@ -1,0 +1,42 @@
+.hero {
+   display: flex;
+   margin-top: 64px;
+   margin-left: 64px;
+
+   &__avatar {
+      width: 76px;
+      height: 76px;
+      border-radius: 8px;
+   }
+
+   &__content {
+      margin-left: 18px;
+   }
+
+   &__name {
+      font-size: 22px;
+   }
+
+   &__characteristics {
+      margin-top: 14px;
+   }
+
+   &__characteristic {
+      font-size: 18px;
+
+      & + & {
+         margin-top: 8px;
+      }
+   }
+}
+
+.characteristic {
+   &__name {
+      color: #555;
+   }
+
+   &__value {
+      margin-left: 6px;
+      color: #000;
+   }
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import s from "./Home.module.scss";
 import { Button } from "../../components/Button/Button.jsx";
-import "../../assets/offer.jpg";
+import "../../assets/images/offer.jpg";
 
 export const Home = () => {
    return (
@@ -16,7 +16,9 @@ export const Home = () => {
                   alt="Приветственная черепашка"
                   className={s.offer__image + " " + s.offer__item}
                />
-               <Button>Сражаться</Button>
+               <Button to="/team" type="default">
+                  Собрать легион
+               </Button>
             </div>
          </div>
       </section>

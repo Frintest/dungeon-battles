@@ -1,20 +1,45 @@
 .btn {
-   padding: 16px 24px;
-   background: #55b553;
+   display: flex;
+   align-items: center;
    border-radius: 10px;
    cursor: pointer;
-   transition: 0.3s;
+   transition: background 0.3s;
    font-size: 18px;
-   color: #fff;
    text-transform: uppercase;
-   border: 0px;
-
-   &:hover {
-      background: #489b46;
-   }
 
    &:active {
-      background: #55b553;
       transition: 0s;
+   }
+
+   &Default {
+      height: 48px;
+      padding: 0 24px;
+      background: #55b553;
+      color: #fff;
+      border: 0px;
+
+      &:hover {
+         background: #489b46;
+      }
+
+      &:active {
+         background: #55b553;
+      }
+   }
+
+   &Border {
+      height: 46px;
+      padding: 0 24px;
+      background: #fff;
+      color: #000;
+      border: 2px solid #777;
+   }
+
+   &BorderActive {
+      height: 46px;
+      padding: 0 24px;
+      background: #e7e7e7;
+      color: #000;
+      border: 2px solid #777;
    }
 }

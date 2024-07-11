@@ -1,0 +1,29 @@
+.team {
+   &__container {
+      max-width: 1200px;
+      margin: 40px auto 0 40px;
+      overflow: hidden;
+   }
+
+   &__type,
+   &__createType {
+      display: flex;
+      align-items: center;
+
+      * + * {
+         margin-left: 32px;
+      }
+   }
+
+   &__createType {
+      margin-top: 64px;
+   }
+
+   &__heroes {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 944px;
+      margin-top: calc(-64px + 52px);
+      margin-left: -64px;
+   }
+}
