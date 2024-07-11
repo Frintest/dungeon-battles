@@ -1,0 +1,8 @@
+@font-face {
+   font-family: "Wizland";
+   // webpack ищет файл шрифта в папе scss, а не относительно данного scss файла
+   src: url(../assets/fonts/wizland.ttf) format("truetype");
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}

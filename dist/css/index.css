@@ -1,0 +1,78 @@
+/*!********************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./pages/NotFound/NotFound.module.scss ***!
+  \********************************************************************************************************************************/
+
+/*!************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./pages/Home/Home.module.scss ***!
+  \************************************************************************************************************************/
+.mKagP6p9mRDe_bLJE9xv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.UiZk0IL_MQgf0LppjrNw + .UiZk0IL_MQgf0LppjrNw {
+  margin-top: 28px;
+}
+.RVCIZteWDMnpXCYkhNkP {
+  font-size: 36px;
+  text-align: center;
+}
+/*!*********************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./components/Button/Button.module.scss ***!
+  \*********************************************************************************************************************************/
+.JIqNQ41RF6lCmSbjiRHj {
+  padding: 18px 20px;
+  background: #55b553;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.JIqNQ41RF6lCmSbjiRHj:hover {
+  background: #489b46;
+}
+.JIqNQ41RF6lCmSbjiRHj:active {
+  background: #55b553;
+}
+/*!***********************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./scss/main.scss ***!
+  \***********************************************************************************************************/
+#wrapper {
+  width: 1600px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+svg,
+picture,
+video {
+  display: block;
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
