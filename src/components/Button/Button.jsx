@@ -13,11 +13,18 @@ export const Button = (props) => {
    }
 
    return !props.to ? (
-      <button className={s.btn + " " + extendClass} onClick={props.onClick}>
+      <button
+         className={s.btn + " " + extendClass + (props.className ? " " + props.className : "")}
+         onClick={props.onClick}
+      >
          {props.children}
       </button>
    ) : (
-      <Link to={props.to} className={s.btn + " " + extendClass} onClick={props.onClick}>
+      <Link
+         className={s.btn + " " + extendClass + (props.className ? " " + props.className : "")}
+         onClick={props.onClick}
+         to={props.to}
+      >
          {props.children}
       </Link>
    );

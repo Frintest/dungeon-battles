@@ -44,6 +44,10 @@ export const Team = (props) => {
             </div>
 
             <ul className={s.team__heroes}>{heroesElements}</ul>
+
+            <Button type="default" to="/game" className={s.team__start}>
+               Начать сражение
+            </Button>
          </Container>
       </div>
    );
