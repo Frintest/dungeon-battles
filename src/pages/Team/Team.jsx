@@ -2,6 +2,7 @@ import React from "react";
 import s from "./Team.module.scss";
 import { Button } from "../../components/Button/Button.jsx";
 import { Hero } from "./Hero/Hero.jsx";
+import { Container } from "../../components/Container/Container.jsx";
 
 export const Team = (props) => {
    const heroesType = props.team === "your" ? "your" : "opponent";
@@ -11,7 +12,7 @@ export const Team = (props) => {
 
    return (
       <div className={s.team}>
-         <div className={s.team__container}>
+         <Container className={s.team__container}>
             <div className={s.team__type}>
                <Button
                   type={props.team === "your" ? "default" : "border"}
@@ -43,7 +44,7 @@ export const Team = (props) => {
             </div>
 
             <ul className={s.team__heroes}>{heroesElements}</ul>
-         </div>
+         </Container>
       </div>
    );
 };

@@ -1,12 +1,13 @@
 import React from "react";
 import s from "./Home.module.scss";
+import { Container } from "../../components/Container/Container.jsx";
 import { Button } from "../../components/Button/Button.jsx";
 import "../../assets/images/offer.jpg";
 
 export const Home = () => {
    return (
       <section className={s.home}>
-         <div className={s.home__container}>
+         <Container className={s.home__container}>
             <div className={s.offer + " " + s.offer__item}>
                <h1 className={s.offer__title + " " + s.offer__item}>
                   Сражения<br></br>в подземельях
@@ -20,7 +21,7 @@ export const Home = () => {
                   Собрать легион
                </Button>
             </div>
-         </div>
+         </Container>
       </section>
    );
 };
