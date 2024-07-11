@@ -2,6 +2,8 @@ import React from "react";
 import s from "./Game.module.scss";
 import { Container } from "../../components/Container/Container.jsx";
 import "../../assets/images/fill.jpg";
+import "../../assets/images/luger.png";
+import "../../assets/images/offer.png";
 
 export const Game = (props) => {
    React.useEffect(() => {
@@ -55,14 +57,14 @@ export const Game = (props) => {
             if (this.x < this.width / 2) {
                this.x = this.width / 2;
             }
-            if (this.x > canvas.width - this.width / 2) {
-               this.x = canvas.width - this.width / 2;
+            if (this.x > canvas.current.width - this.width / 2) {
+               this.x = canvas.current.width - this.width / 2;
             }
             if (this.y < this.height / 2) {
                this.y = this.height / 2;
             }
-            if (this.y > canvas.height - this.height / 2) {
-               this.y = canvas.height - this.height / 2;
+            if (this.y > canvas.current.height - this.height / 2) {
+               this.y = canvas.current.height - this.height / 2;
             }
          };
 
@@ -84,18 +86,22 @@ export const Game = (props) => {
             this.angle = Math.atan2(mouseY - this.y, mouseX - this.x);
          };
 
-         // createWeapon = () => {
-         //    const weapon = new Image();
-         //    weapon.src = "./img/";
-         //    weapon.onload = () => {
-         //       ctx.drawImage(weapon, x0, y0, width, height);
-         //    };
-         // };
+         drawWeapon = () => {
+            const weapon = new Image();
+            weapon.src = "./img/luger.png";
+            weapon.onload = () => {
+               ctx.save();
+               ctx.translate(this.x, this.y);
+               ctx.rotate(this.angle);
+               ctx.drawImage(weapon, 0, 0, 32, 20);
+               ctx.restore();
+            };
+         };
       }
 
       const name = "Название";
       const lifeCount = 10;
-      const avatarSrc = "offer.jpg";
+      const avatarSrc = "offer.png";
       const weapon = "Кагорушка";
       const x = 100;
       const y = 100;
@@ -145,15 +151,11 @@ export const Game = (props) => {
       window.addEventListener("keyup", handleKeyUp);
       window.addEventListener("mousemove", mainHero.handleMouseMove);
 
-      const clearCanvas = () => {
-         ctx.clearRect(0, 0, canvas.width, canvas.height);
-      };
-
       const redraw = () => {
-         clearCanvas();
          drawBackground();
          mainHero.drawHero();
          mainHero.updateCoords();
+         mainHero.drawWeapon();
       };
 
       const loop = () => {
