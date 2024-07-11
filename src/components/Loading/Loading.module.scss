@@ -1,0 +1,11 @@
+.loading {
+   &__container {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+   }
+	
+   &__title {
+      font-size: 36px;
+   }
+}
