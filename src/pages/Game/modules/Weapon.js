@@ -41,6 +41,10 @@ export class Weapon {
 		this.bullets.push(bullet);
 	};
 
+	removeBullet = () => {
+
+	};
+
 	shot = () => {
 		this.bullets.forEach((bullet) => {
 			if (!bullet.getIsOffScreen()) {

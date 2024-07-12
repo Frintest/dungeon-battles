@@ -19,6 +19,8 @@ module.exports = {
 	},
 	output: {
 		path: path.resolve(__dirname, 'dist'),
+		filename: 'js/[name].js',
+		publicPath: process.env.PUBLIC_URL,
 		clean: true
 	},
 	optimization: {
