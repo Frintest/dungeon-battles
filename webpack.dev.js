@@ -75,7 +75,7 @@ module.exports = {
 			filename: 'css/[name].css'
 		}),
 		new webpack.DefinePlugin({
-			'process.env.PUBLIC_URL': JSON.stringify(process.env.PUBLIC_URL),
+			'process.env.PUBLIC_URL': JSON.stringify(""),
 		}),
 	]
 };

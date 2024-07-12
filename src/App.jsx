@@ -8,9 +8,9 @@ import { Loading } from "./components/Loading/Loading.jsx";
 
 export const App = () => {
    return (
-      <BrowserRouter basename={`/${process.env.PUBLIC_URL}`}>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
          <Routes>
-            <Route path="" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="team" element={<TeamContainer />} />
             <Route
                path="game"
