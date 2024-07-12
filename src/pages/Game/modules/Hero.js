@@ -1,5 +1,5 @@
 import { Weapon } from "./Weapon.js";
-import { Bullet } from "./Bullet.js";
+// import { Bullet } from "./Bullet.js";
 
 export class Hero {
 	constructor(name, lifeCount, avatarSrc, weaponName, x, y, canvas, ctx) {
@@ -17,6 +17,8 @@ export class Hero {
 		this.weaponName = weaponName;
 		this.canvas = canvas;
 		this.ctx = ctx;
+		this.isShot = false;
+		this.weapon = new Weapon(this.weaponName, 0, this.x, this.y, this.angle, this.canvas, this.ctx);
 	}
 
 	drawHero = () => {
@@ -54,13 +56,26 @@ export class Hero {
 	};
 
 	drawWeapon = () => {
-		const weapon = new Weapon(this.weaponName, 0, this.x, this.y, this.angle, this.ctx);
-		weapon.drawWeapon();
+		this.weapon.drawWeapon();
+	};
+
+	updateCoordsWeapon = () => {
+		this.weapon.updateCoords(this.x, this.y);
+	};
+
+	updateAngleWeapon = () => {
+		this.weapon.updateAngleWeapon(this.angle);
+	};
+
+	createBullet = () => {
+		this.weapon.createBullet();
 	};
 
 	shot = () => {
-		const bullet = new Bullet(this.x, this.y, this.angle, this.ctx);
-		bullet.draw();
-		bullet.updateCoords();
+		this.weapon.shot();
+	}
+
+	getIsShot = () => {
+		return this.isShot;
 	};
 }
